@@ -48,7 +48,7 @@ public class Operations extends Object {
 		/************************************************/
 
 		double dubs = 5.3;
-		dubs = dubs-- * dubs;
+		dubs = dubs * dubs;
 
 		/************************************************
 		 *	DO NOT MODIFY BELOW THIS CALLOUT
