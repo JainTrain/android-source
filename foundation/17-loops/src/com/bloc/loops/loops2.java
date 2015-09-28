@@ -8,20 +8,24 @@ public class Loops extends Object {
 
 	public static void main(String [] args) {
 		boolean[] someBools = {true, false, true, true, false, true, false, false};
-		boolean temp = false; 
+		boolean temp = false;
 
 		//********** Starts Here ************************/
-		
-		int j = 7;
-		int k = 0;
-		while (j >= 4){
-			temp = someBools[j];
-			someBools[j] = someBools[k];
-			someBools[k] = temp;
-			j--;
-			k++;
-		}
-		
+		temp = someBools[7];
+		someBools[7] = someBools[0];
+		someBools[0] = temp;
+
+		temp = someBools[6];
+		someBools[6] = someBools[1];
+		someBools[1] = temp;
+
+		temp = someBools[5];
+		someBools[5] = someBools[2];
+		someBools[2] = temp;
+
+		temp = someBools[4];
+		someBools[4] = someBools[3];
+		someBools[3] = temp;
 		//********** Ends Here **************************/
 		
 
@@ -46,9 +50,14 @@ public class Loops extends Object {
 		/************************************************/
 
 		//********** Starts Here ************************/
-		for (int x= 0; x < 7; x++) {
-		numArray[x] = !someBools[x] ? 1 : 0;
-		}
+		numArray[0] = !someBools[0] ? 1 : 0;
+		numArray[1] = !someBools[1] ? 1 : 0;
+		numArray[2] = !someBools[2] ? 1 : 0;
+		numArray[3] = !someBools[3] ? 1 : 0;
+		numArray[4] = !someBools[4] ? 1 : 0;
+		numArray[5] = !someBools[5] ? 1 : 0;
+		numArray[6] = !someBools[6] ? 1 : 0;
+		numArray[7] = !someBools[7] ? 1 : 0;
 		//********** Ends Here **************************/
 
 
